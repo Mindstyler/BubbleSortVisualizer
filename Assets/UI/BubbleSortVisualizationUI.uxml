@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement>
+        <ui:VisualElement style="flex-direction: row;">
+            <ui:VisualElement style="justify-content: space-around;">
+                <ui:Label tabindex="-1" text="Item Count" display-tooltip-when-elided="true" />
+                <ui:Label tabindex="-1" text="Operations Per Second" display-tooltip-when-elided="true" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1;">
+                <ui:UnsignedIntegerField name="item-count-input" value="10" is-delayed="true" style="flex-grow: 1;" />
+                <ui:SliderInt picking-mode="Ignore" value="1" high-value="200" low-value="1" show-input-field="true" name="operations-per-second-slider" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-direction: row; justify-content: center; height: 50px;">
+            <ui:Button text="Play" display-tooltip-when-elided="true" name="play-toggle" />
+            <ui:Button text="Step" display-tooltip-when-elided="true" name="step-button" />
+            <ui:Button text="Reset" display-tooltip-when-elided="true" name="reset-button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
